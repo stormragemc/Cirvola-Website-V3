@@ -247,7 +247,7 @@ export function ComposeProvider({ children }: { children: ReactNode }) {
           <label className="consent">
             <input type="checkbox" name="consent" required />
             <span>
-              I agree that Cirvola may use these details to reply to my request, as set out in the{' '}
+              {'I agree that Cirvola may use these details to reply to my request, as set out in the '}
               <a href="/privacy" target="_blank">privacy policy</a>.
             </span>
           </label>

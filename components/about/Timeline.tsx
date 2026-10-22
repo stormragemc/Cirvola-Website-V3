@@ -69,6 +69,7 @@ export function Timeline({ timeline }: { timeline: Point[] }) {
 
     // Deep link: /about#bsf opens that point.
     const fromHash = timeline.findIndex((t) => t.id === location.hash.slice(1));
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- the hash is only known in the browser
     select(fromHash >= 0 ? fromHash : 0, { scroll: fromHash >= 0 });
 
     return () => {

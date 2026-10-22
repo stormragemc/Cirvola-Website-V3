@@ -174,11 +174,20 @@ export function LabGame({ lab }: { lab: Lab }) {
   const goRef = useRef<HTMLButtonElement>(null);
   const resultId = useRef(0);
   const progressRef = useRef(progress);
-  progressRef.current = progress;
   const selRef = useRef(sel);
-  selRef.current = sel;
 
-  useEffect(() => setProgress(load()), []);
+  /** Show, remember and save new progress. */
+  function commitProgress(next: Progress) {
+    progressRef.current = next;
+    save(next);
+    setProgress(next);
+  }
+
+  // Saved progress lives in this browser only, so it's read after hydration.
+  useEffect(() => {
+    progressRef.current = load();
+    setProgress(progressRef.current);
+  }, []);
 
   const show = (r: Result) => setResult({ id: ++resultId.current, r });
 
@@ -204,9 +213,7 @@ export function LabGame({ lab }: { lab: Lab }) {
     if (d) {
       const k = key(d.m, d.p);
       const isNew = !progress.found.has(k);
-      const next = { found: new Set(progress.found).add(k), ai: progress.ai };
-      save(next);
-      setProgress(next);
+      commitProgress({ found: new Set(progress.found).add(k), ai: progress.ai });
       show({
         type: 'card',
         cls: `${d.source === 'cirvola' ? 'is-cirvola' : ''}${isNew ? ' is-new' : ''}`,
@@ -227,11 +234,7 @@ export function LabGame({ lab }: { lab: Lab }) {
   }
 
   function onIdea(entry: AiEntry, combo: string, m: Material, p: Process) {
-    if (!entry.demo) {
-      const next = { found: progressRef.current.found, ai: [...progressRef.current.ai, entry] };
-      save(next);
-      setProgress(next);
-    }
+    if (!entry.demo) commitProgress({ found: progressRef.current.found, ai: [...progressRef.current.ai, entry] });
     show({ type: 'ai', entry, combo, m, p });
   }
 
@@ -244,9 +247,7 @@ export function LabGame({ lab }: { lab: Lab }) {
       return;
     }
     setArmed(false);
-    const next = { found: new Set<string>(), ai: [] };
-    save(next);
-    setProgress(next);
+    commitProgress({ found: new Set<string>(), ai: [] });
     setResult(null);
   }
   useEffect(() => () => clearTimeout(armTimer.current), []);

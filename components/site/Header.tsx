@@ -11,8 +11,6 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const toggle = useRef<HTMLButtonElement>(null);
-  const openRef = useRef(open);
-  openRef.current = open;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -22,15 +20,16 @@ export function Header() {
   }, []);
 
   useEffect(() => {
+    if (!open) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && openRef.current) {
+      if (e.key === 'Escape') {
         setOpen(false);
         toggle.current?.focus();
       }
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
-  }, []);
+  }, [open]);
 
   return (
     <header className={`site-header${scrolled ? ' is-scrolled' : ''}`} data-header="">

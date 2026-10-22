@@ -14,12 +14,12 @@ export type Tool = { name: string; description: string; input_schema: Record<str
 
 /** Error with the HTTP status from the Claude API, when there was one. */
 export class ClaudeError extends Error {
-  constructor(
-    message: string,
-    public status?: number,
-    public detail?: string
-  ) {
+  status?: number;
+  detail?: string;
+  constructor(message: string, status?: number, detail?: string) {
     super(message);
+    this.status = status;
+    this.detail = detail;
   }
 }
 
@@ -76,6 +76,7 @@ export function sanitizeSvg(svg: unknown, { viewBox = '0 0 800 500' } = {}) {
   if (start === -1 || end === -1) return fallbackSvg(viewBox);
   s = DOMPurify.sanitize(s.slice(start, end + 6), {
     USE_PROFILES: { svg: true, svgFilters: true },
+    ADD_TAGS: ['use'],
     FORBID_TAGS: ['image', 'foreignObject', 'iframe', 'object', 'embed', 'audio', 'video', 'a'],
   });
   s = s.replace(/url\(\s*(['"]?)(?!#)[^)]*\)/gi, 'none').replace(/@import[^;]*;/gi, '');

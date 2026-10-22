@@ -50,11 +50,14 @@ export function ComposeProvider({ children }: { children: ReactNode }) {
   const [hidden, setHidden] = useState(true);
   const [minimised, setMinimised] = useState(false);
   const [entering, setEntering] = useState(false);
-  const [done, setDone] = useState(false);
+  const [done, setDoneState] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
-  const doneRef = useRef(done);
-  doneRef.current = done;
+  const doneRef = useRef(false);
+  const setDone = useCallback((v: boolean) => {
+    doneRef.current = v;
+    setDoneState(v);
+  }, []);
 
   const autoSubject = useCallback(() => {
     if (!form.current || !subject.current || subjectTouched.current) return;
@@ -95,7 +98,7 @@ export function ComposeProvider({ children }: { children: ReactNode }) {
       setDone(false);
     }
     (opener.current as HTMLElement | null)?.focus?.();
-  }, []);
+  }, [setDone]);
 
   // Field listeners: keep the subject line in step, and clear invalid marks while typing.
   useEffect(() => {
@@ -132,7 +135,7 @@ export function ComposeProvider({ children }: { children: ReactNode }) {
     }
     firstPath.current = false;
     if (location.hash === '#request') open();
-  }, [pathname, open]);
+  }, [pathname, open, setDone]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

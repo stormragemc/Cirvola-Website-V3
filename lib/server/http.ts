@@ -8,11 +8,10 @@ export function json(status: number, body: unknown) {
 }
 
 class HttpError extends Error {
-  constructor(
-    message: string,
-    public status: number
-  ) {
+  status: number;
+  constructor(message: string, status: number) {
     super(message);
+    this.status = status;
   }
 }
 
@@ -46,7 +45,6 @@ export function rateLimited(req: Request, bucket: string, { max = 8, windowMs = 
 
 export const str = (v: unknown, max = 500) =>
   String(v ?? '')
-    // eslint-disable-next-line no-control-regex
     .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '')
     .trim()
     .slice(0, max);

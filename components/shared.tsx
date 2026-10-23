@@ -12,6 +12,7 @@ export const kindLabel: Record<string, string> = {
   school: 'School programme',
   corporate: 'Corporate workshop',
   exhibition: 'Exhibition',
+  showcase: 'Showcase',
   booth: 'Booth',
   fund: 'Innovation fund',
   competition: 'Competition',

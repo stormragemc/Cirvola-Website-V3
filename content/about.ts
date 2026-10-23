@@ -128,6 +128,16 @@ export const timeline = [
     ],
   },
   {
+    id: 'wee-hur',
+    kind: 'milestone',
+    label: 'Wee Hur × SUTD',
+    when: 'Aug 2026',
+    title: 'Showcasing to donors at SUTD',
+    image: '/images/photos/wee-hur-sutd-showcase.webp',
+    alt: 'A Cirvola founder explaining upcycled products to guests at the Wee Hur Holdings donor event at SUTD',
+    body: ['We presented Cirvola and served samples of our upcycled products at Wee Hur Holdings’ donor event with SUTD.'],
+  },
+  {
     id: 'tampines',
     kind: 'milestone',
     label: 'Workshop series',

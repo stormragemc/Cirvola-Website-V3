@@ -143,6 +143,22 @@ export const events = [
     imageAlt: 'The Cirvola team with Baey Yam Keng at their Clean & Green Singapore booth, holding eco-enzyme bottles',
   },
   {
+    id: 'wee-hur-sutd-aug-2026',
+    category: 'booths',
+    kind: 'showcase',
+    status: 'past',
+    date: '2026-08',
+    dateLabel: 'Aug 2026',
+    title: 'Wee Hur Holdings donor event with SUTD',
+    venue: 'Singapore University of Technology and Design',
+    summary: [
+      'At Wee Hur Holdings’ donor event with SUTD, we showcased Cirvola to donors and university guests, walking them through our upcycled products and sharing samples.',
+    ],
+    highlights: ['Product showcase', 'Tastings'],
+    image: '/images/photos/wee-hur-sutd-showcase.webp',
+    imageAlt: 'A Cirvola founder explaining upcycled products to guests at the Wee Hur Holdings donor event at SUTD',
+  },
+  {
     id: 'oth-kopikao-oct-2026',
     category: 'booths',
     kind: 'booth',

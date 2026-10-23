@@ -189,8 +189,8 @@ export const events = [
       'The programme supported our early development and community validation, including our first workshops and public engagement. Being named a finalist was an early milestone in our social-enterprise journey.',
     ],
     highlights: ['Finalist'],
-    image: '/images/photos/workshop-talk.webp',
-    imageAlt: 'Participants and facilitators talking in a workshop space',
+    image: '/images/photos/create4good-booth.webp',
+    imageAlt: 'The Cirvola team at their Create4Good booth with eco-enzyme samples and calamansi bars',
   },
   {
     id: 'hult-prize',

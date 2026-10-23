@@ -48,8 +48,8 @@ export const timeline = [
     label: 'Create4Good finalist',
     when: 'Jul 2025',
     title: 'Our first stage: Create4Good',
-    image: '/images/photos/workshop-talk.webp',
-    alt: 'Participants and facilitators talking in a workshop',
+    image: '/images/photos/create4good-booth.webp',
+    alt: 'The Cirvola team at their Create4Good booth with eco-enzyme samples and calamansi bars',
     body: [
       'Cirvola became a finalist in SUTD’s Create4Good Innovation Fund. The programme supported our early development and community validation, including our very first workshop and public events.',
     ],

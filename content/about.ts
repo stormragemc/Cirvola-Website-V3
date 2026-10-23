@@ -84,8 +84,8 @@ export const timeline = [
     label: 'Clean & Green Singapore',
     when: 'Nov 2025',
     title: 'Valorisation in front of policymakers',
-    image: '/images/photos/calamansi-fibre-bars.webp',
-    alt: 'A tray of golden calamansi fibre bars cut into squares',
+    image: '/images/photos/clean-green-baey-yam-keng.webp',
+    alt: 'The Cirvola team with Baey Yam Keng at their Clean & Green Singapore booth, holding eco-enzyme bottles',
     body: [
       'At Our Tampines Hub we presented calamansi bars made from valorised calamansi by-products, the eco-enzymes first prepared at our eco-tour, and an early demo of our Waste-to-Wonder app, to community leaders and public agencies including Grace Fu, Baey Yam Keng and North East CDC.',
     ],

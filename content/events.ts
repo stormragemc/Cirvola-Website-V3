@@ -139,8 +139,8 @@ export const events = [
       'We showed policymakers, community leaders and public agencies how food valorisation could support community sustainability, including Grace Fu, Baey Yam Keng and representatives from North East CDC.',
     ],
     highlights: ['Calamansi bars', 'Eco-enzymes', 'Waste-to-Wonder app demo'],
-    image: '/images/photos/calamansi-fibre-bars.webp',
-    imageAlt: 'A tray of golden calamansi fibre bars cut into squares',
+    image: '/images/photos/clean-green-baey-yam-keng.webp',
+    imageAlt: 'The Cirvola team with Baey Yam Keng at their Clean & Green Singapore booth, holding eco-enzyme bottles',
   },
   {
     id: 'oth-kopikao-oct-2026',

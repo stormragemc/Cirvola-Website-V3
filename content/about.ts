@@ -35,8 +35,8 @@ export const timeline = [
     label: 'How we met',
     when: '2025',
     title: '[[How the team came together]]',
-    image: '/images/photos/booth-team.webp',
-    alt: 'The Cirvola team together at a booth',
+    image: '/images/photos/ecotour-garden-group.webp',
+    alt: 'The team and guests on a guided garden walk during the first Waste-to-Wonder eco-tour',
     body: [
       '[[Tell the story of how the founders met. For example: at SUTD, in a class, at a hackathon, or through Create4Good.]]',
       '[[What made you decide to build Cirvola together?]]',
@@ -48,8 +48,8 @@ export const timeline = [
     label: 'Create4Good finalist',
     when: 'Jul 2025',
     title: 'Our first stage: Create4Good',
-    image: '/images/photos/create4good-booth.webp',
-    alt: 'The Cirvola team at their Create4Good booth with eco-enzyme samples and calamansi bars',
+    image: '/images/photos/corn-chutney-hand.webp',
+    alt: 'A hand holding a crisp corn fritter made from by-products',
     body: [
       'Cirvola became a finalist in SUTD’s Create4Good Innovation Fund. The programme supported our early development and community validation, including our very first workshop and public events.',
     ],
@@ -84,8 +84,8 @@ export const timeline = [
     label: 'Clean & Green Singapore',
     when: 'Nov 2025',
     title: 'Valorisation in front of policymakers',
-    image: '/images/photos/clean-green-baey-yam-keng.webp',
-    alt: 'The Cirvola team with Baey Yam Keng at their Clean & Green Singapore booth, holding eco-enzyme bottles',
+    image: '/images/photos/booth-team.webp',
+    alt: 'The Cirvola team at their Clean & Green Singapore booth, holding up eco-enzyme and calamansi bars',
     body: [
       'At Our Tampines Hub we presented calamansi bars made from valorised calamansi by-products, the eco-enzymes first prepared at our eco-tour, and an early demo of our Waste-to-Wonder app, to community leaders and public agencies including Grace Fu, Baey Yam Keng and North East CDC.',
     ],
@@ -97,7 +97,7 @@ export const timeline = [
     when: null,
     title: 'Learn it by making it',
     image: '/images/photos/workshop-stations.webp',
-    alt: 'Participants cooking at kitchen stations',
+    alt: 'Participants cooking at kitchen stations at Our Tampines Hub',
     body: [
       'Cirvola transforms food waste into opportunities through circular upcycling, education and community engagement. We run action-oriented workshops where people make something real from a by-product, taste it, and take the know-how home.',
       'Behind the workshops sits a bigger loop: collecting clean, traceable by-products, testing what they can safely become, and putting valorised products back into the community. Schools are where we’re scaling first, through our School Innovation Lab.',
@@ -109,8 +109,8 @@ export const timeline = [
     label: 'Pilot workshop',
     when: 'Jan 2026',
     title: 'A pilot in Tampines',
-    image: '/images/photos/poster-waste-to-wonder-jan.webp',
-    alt: 'Poster for the Waste to Wonder pilot workshop at Our Tampines Hub',
+    image: '/images/photos/eco-enzyme-bottles.webp',
+    alt: 'Small bottles of amber and brown eco-enzyme lined up on a counter',
     body: [
       'Our Waste to Wonder pilot at Our Tampines Hub brought our first two recipes together: participants made eco-enzyme to take home and sampled our calamansi bars. It showed us what a full workshop series could become.',
     ],
@@ -121,8 +121,8 @@ export const timeline = [
     label: 'Hult Prize',
     when: 'Feb 2026',
     title: 'Hult Prize qualifiers',
-    image: '/images/photos/ecotour-kitchen-group.webp',
-    alt: 'A group gathered around a kitchen counter',
+    image: '/images/photos/vjc-talk-stage.webp',
+    alt: 'A Cirvola founder presenting the team’s mission on stage',
     body: [
       'We qualified in the Hult Prize with a social-enterprise model that turns food by-products into valuable resources, connecting food-waste reduction, sustainability education, community engagement and opportunities for vulnerable youths. [[Add the round you reached]]',
     ],
@@ -133,8 +133,8 @@ export const timeline = [
     label: 'Wee Hur × SUTD',
     when: 'Aug 2026',
     title: 'Showcasing to donors at SUTD',
-    image: '/images/photos/wee-hur-sutd-showcase.webp',
-    alt: 'A Cirvola founder explaining upcycled products to guests at the Wee Hur Holdings donor event at SUTD',
+    image: '/images/photos/workshop-talk.webp',
+    alt: 'Guests trying Cirvola’s products at the Wee Hur Holdings donor event at SUTD',
     body: ['We presented Cirvola and served samples of our upcycled products at Wee Hur Holdings’ donor event with SUTD.'],
   },
   {
@@ -143,8 +143,8 @@ export const timeline = [
     label: 'Workshop series',
     when: 'Aug 2026',
     title: 'A home in the East',
-    image: '/images/photos/oth-series-beetroot-latte.webp',
-    alt: 'Four pans of bright pink beetroot latte being stirred',
+    image: '/images/photos/oth-series-demo.webp',
+    alt: 'A Cirvola facilitator cooking a demonstration for families at Our Tampines Hub',
     body: [
       'Our first full workshop series ran every Sunday at Our Tampines Hub, supported by North East CDC and Our Tampines Hub with an S$1,000 grant. Children, families and seniors made eco-enzyme and explored calamansi by-products.',
       'This is also where beetroot came in: beetroot latte and beetroot-pulp chocolate, which we’ve kept developing since, with mixes like orange zest.',
@@ -157,7 +157,7 @@ export const timeline = [
     when: 'Sep 2026',
     title: 'Backed by the Baby Shark Fund',
     image: '/images/photos/workshop-room.webp',
-    alt: 'A workshop kitchen with a projected presentation',
+    alt: 'A Cirvola facilitator running a workshop at the Our Tampines Hub cooking stations',
     body: [
       'We secured S$8,000 from SUTD’s Baby Shark Fund 3.0 to develop our workshops and valorisation activities, marking our move from a student-led initiative to a more structured social enterprise.',
     ],
@@ -182,6 +182,7 @@ export const timeline = [
     title: 'Valorisation through play',
     image: '/images/photos/poster-kopikao-oct-2026.webp',
     alt: 'Poster for KoPiKao Under One Sky at Tampines Central Community Complex',
+    poster: true,
     body: [
       'At KoPiKao, Tampines Central’s community gathering, we ran a booth designed especially for children with special needs, who played Valorise It!, our fruit-ninja-style game, to discover what food waste can turn into.',
     ],
@@ -192,8 +193,8 @@ export const timeline = [
     label: 'Scaling',
     when: '2026 onwards',
     title: 'From pilot workshops to a movement',
-    image: '/images/photos/workshop-kitchen-wide.webp',
-    alt: 'A busy workshop kitchen with participants at every station',
+    image: '/images/photos/vjc-campus.webp',
+    alt: 'Students gathered outside Victoria Junior College',
     body: [
       'Phase 1 (2026 to Q2 2027): 30 to 40 pilot workshops, school partnerships, and becoming a certified body.',
       'Phase 2 (Q2 to Q4 2027): reaching out to F&B partners, R&D on food valorisation, validating demand for our products, and growing our facilitator network.',

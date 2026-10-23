@@ -160,7 +160,7 @@ export function Timeline({ timeline }: { timeline: Point[] }) {
               data-tl-panel={i}
               hidden={i !== current}
             >
-              <figure className="tl-figure">
+              <figure className={`tl-figure${t.poster ? ' is-poster' : ''}`}>
                 <img src={t.image} alt={t.alt} loading="lazy" />
               </figure>
               <div className="tl-copy">

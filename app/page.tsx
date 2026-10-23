@@ -45,9 +45,9 @@ function Hero() {
         </div>
       </div>
       <div className="hero-photos" aria-hidden="true">
-        <img src="/images/photos/workshop-stations.webp" alt="" width="1800" height="1200" />
-        <img src="/images/photos/calamansi-fibre-bars.webp" alt="" width="768" height="1024" />
-        <img src="/images/photos/workshop-pans.webp" alt="" width="1400" height="1050" />
+        <img src="/images/photos/workshop-stirring.webp" alt="" width="1210" height="908" />
+        <img src="/images/photos/ecotour-garden.webp" alt="" width="1000" height="1498" />
+        <img src="/images/photos/ecotour-kitchen-group.webp" alt="" width="864" height="564" />
       </div>
     </section>
   );

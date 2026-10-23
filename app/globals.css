@@ -1046,3 +1046,6 @@ button { cursor: pointer; }
 .autoplay-video-poster:active .autoplay-video-play { transform: scale(0.97); }
 @media (hover: hover) and (pointer: fine) { .autoplay-video-poster:hover .autoplay-video-play { transform: scale(1.06); } }
 .event-media.is-video .date-block { z-index: 1; pointer-events: none; }
+
+/* Posters on the About timeline are shown whole, not cropped */
+.tl-figure.is-poster img { object-fit: contain; background: var(--paper); }

@@ -76,14 +76,14 @@ export const programmes = [
   {
     title: 'School Innovation Lab',
     body: 'Design thinking plus live valorisation cooking: students find a real problem, test an idea and pitch it.',
-    image: '/images/photos/workshop-stations.webp',
-    alt: 'Students at kitchen stations during a school programme',
+    image: '/images/photos/vjc-kitchen-group.webp',
+    alt: 'Victoria Junior College students gathered around a school kitchen counter',
   },
   {
     title: 'Booths and exhibitions',
     body: 'Interactive booths for public events and company days, with or without cooking.',
-    image: '/images/photos/booth-team.webp',
-    alt: 'The Cirvola team at an exhibition booth',
+    image: '/images/photos/clean-green-baey-yam-keng.webp',
+    alt: 'The Cirvola team at their Clean & Green Singapore booth',
   },
 ];
 

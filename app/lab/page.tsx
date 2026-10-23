@@ -61,7 +61,7 @@ function Notebook() {
         <div>
           <h2 className="section-title" id="notebook-title">Lab notebook</h2>
           <p className="section-intro">What’s on our bench, and how far along it is.</p>
-          <img className="notebook-photo" src="/images/photos/product-tubs.webp" alt="Rows of small tubs stamped with the Cirvola logo" loading="lazy" />
+          <img className="notebook-photo" src="/images/photos/oth-series-beetroot-pan.webp" alt="Beetroot pulp being stirred in a pan, with a jug of water ready" loading="lazy" />
         </div>
         <ol className="notebook-list">
           {lab.notebook.map((n) => (

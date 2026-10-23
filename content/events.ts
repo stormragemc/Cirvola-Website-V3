@@ -225,8 +225,8 @@ export const events = [
       'Our pitch connected food-waste reduction, sustainability education, community engagement and opportunities for vulnerable youths, in line with the UN Sustainable Development Goals.',
     ],
     highlights: ['Qualifier'],
-    image: '/images/photos/ecotour-kitchen-group.webp',
-    imageAlt: 'People gathered around a kitchen counter',
+    image: '/images/photos/recipe-sheet.webp',
+    imageAlt: 'An open recipe booklet showing Cirvola’s fresh beetroot latte recipe, next to whole beetroots',
   },
   {
     id: 'baby-shark-fund',
@@ -242,8 +242,8 @@ export const events = [
       'It marks our move from a student-led initiative to a more structured social enterprise focused on practical sustainability solutions.',
     ],
     highlights: ['S$8,000 awarded'],
-    image: '/images/photos/workshop-room.webp',
-    imageAlt: 'A workshop kitchen with a projected presentation',
+    image: '/images/photos/product-tubs.webp',
+    imageAlt: 'Rows of small tubs stamped with the Cirvola logo',
   },
 ];
 

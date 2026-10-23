@@ -158,8 +158,8 @@ export const timeline = [
     label: 'Victoria Junior College',
     when: 'Oct 2026',
     title: 'Valorisation meets design thinking',
-    image: '/images/photos/workshop-cooking-group.webp',
-    alt: 'Students cooking together',
+    image: '/images/photos/vjc-kitchen-demo.webp',
+    alt: 'A Cirvola facilitator demonstrating with calamansi to students at a school kitchen counter',
     body: [
       'At Victoria Junior College we linked sustainability with the engineering design process: students investigated food-waste problems, experimented with upcycled recipes in cooking rotations, and learned how to pitch their ideas.',
     ],

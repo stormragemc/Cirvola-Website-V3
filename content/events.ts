@@ -85,8 +85,8 @@ export const events = [
       'It runs as a large-group introduction, followed by cooking rotations, real-world problem finding, ideation and pitch preparation.',
     ],
     highlights: ['Design thinking', 'Cooking rotations', 'Problem → idea → pitch'],
-    image: '/images/photos/workshop-cooking-group.webp',
-    imageAlt: 'Students cooking together at kitchen stations during a Cirvola workshop',
+    image: '/images/photos/vjc-hall.webp',
+    imageAlt: 'Victoria Junior College students in the school hall watching a Cirvola talk about upcycled products',
   },
   {
     id: 'resource-impactz-eco-enzyme',

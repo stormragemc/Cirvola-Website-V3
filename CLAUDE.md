@@ -19,7 +19,7 @@ Cirvola's public website. Read README.md first.
 - Sentence case everywhere. No all-caps eyebrow labels, no "→" appended to button text, no `A · B · C` meta strings.
 
 ## Content guardrails
-- Stats need a source. Plans stay plans. No eco-enzyme health claims. No plate-leftover valorisation. Don't name the eco-tour host restaurant. Don't publish budget allocations.
+- Stats need a source. Plans stay plans. No eco-enzyme health claims. No plate-leftover valorisation. Don't publish budget allocations.
 - Testimonials must be real and permitted.
 
 ## npm policy

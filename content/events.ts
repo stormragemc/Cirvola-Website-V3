@@ -11,7 +11,8 @@
 //   dateLabel what visitors see, e.g. "Jul 2025" or "Date to be confirmed"
 //   venue     optional
 //   summary   one or more paragraphs
-//   image     path under /images
+//   image     path under /images (also the poster frame when there's a video)
+//   video     optional YouTube id; plays muted when scrolled into view on /events
 //   [[...]]   placeholder text, shown dashed on the site until replaced
 
 export const events = [
@@ -23,15 +24,17 @@ export const events = [
     status: 'past',
     date: '2025-07',
     dateLabel: 'Jul 2025',
-    title: 'Waste-to-Wonder eco-tour',
+    title: 'Waste-to-Wonder eco-tour with AIR CCCC',
     venue: 'Dempsey, Singapore',
     summary: [
-      'Cirvola’s very first workshop. Participants explored food valorisation through a sustainability tour, chef-led food demonstrations and tastings, an eco-garden walk, and hands-on eco-enzyme making from fruit waste.',
+      'Cirvola’s very first workshop, in collaboration with AIR CCCC. Participants explored food valorisation through a sustainability tour, chef-led food demonstrations and tastings, an eco-garden walk, and hands-on eco-enzyme making from fruit waste.',
       'It introduced our mission of giving food by-products a second life through practical, accessible experiences.',
     ],
     highlights: ['Sustainability tour', 'Chef-led demos and tastings', 'Eco-garden walk', 'Eco-enzyme making'],
-    image: '/images/photos/ecotour-garden-group.webp',
-    imageAlt: 'A group on a guided garden tour surrounded by greenery',
+    image: '/images/photos/ecotour-cooking-club.webp',
+    imageAlt: 'Participants seated at long tables while a chef talks them through the produce',
+    video: '1sT_xLbwwxc',
+    videoTitle: 'Waste-to-Wonder eco-tour with AIR CCCC',
   },
   {
     id: 'oth-pilot-workshop-jan-2026',

@@ -1031,3 +1031,18 @@ button { cursor: pointer; }
   .disc-combo { font-size: 0.72rem; }
 }
 .recipe-dialog:focus, .recipe-dialog:focus-visible { outline: none; }
+
+/* Event video: plays muted when scrolled into view (components/events/AutoplayVideo.tsx) */
+.event-media.is-video, .event-grid .event-media.is-video { aspect-ratio: 16 / 9; background: var(--ink); }
+.autoplay-video, .autoplay-video iframe, .autoplay-video-poster { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.autoplay-video-poster { padding: 0; background: none; }
+.autoplay-video-poster img { width: 100%; height: 100%; object-fit: cover; }
+.autoplay-video-play {
+  position: absolute; left: 50%; top: 50%; translate: -50% -50%; display: grid; place-items: center;
+  width: 64px; height: 64px; border-radius: 50%; background: var(--zest); color: var(--ink);
+  transition: transform 160ms var(--ease-out);
+}
+.autoplay-video-play .icon { fill: currentColor; translate: 2px 0; }
+.autoplay-video-poster:active .autoplay-video-play { transform: scale(0.97); }
+@media (hover: hover) and (pointer: fine) { .autoplay-video-poster:hover .autoplay-video-play { transform: scale(1.06); } }
+.event-media.is-video .date-block { z-index: 1; pointer-events: none; }

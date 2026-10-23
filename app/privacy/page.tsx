@@ -111,7 +111,7 @@ const sections: LegalSection[] = [
     title: 'Cookies and tracking',
     body: (
       <p>
-        This site does not use tracking or advertising cookies, and it doesn’t load third-party analytics. Fonts are served from our own site. The R&amp;D Lab stores
+        This site does not use tracking or advertising cookies, and it doesn’t load third-party analytics. Fonts are served from our own site. The eco-tour video on the Events page is a YouTube embed in privacy-enhanced mode; it only loads when you scroll to it, and YouTube may then store data in your browser under its own policy. The R&amp;D Lab stores
         your discoveries in your browser’s local storage so your collection is still there next time. You can clear it with the Lab’s “Start over” button or your
         browser settings.
       </p>

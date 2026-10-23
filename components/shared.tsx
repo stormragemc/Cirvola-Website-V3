@@ -1,5 +1,6 @@
 import { Icon } from './Icon';
 import { Txt } from './Text';
+import { AutoplayVideo } from './events/AutoplayVideo';
 import type { events } from '@/content/events';
 
 export type CirvolaEvent = (typeof events)[number];
@@ -41,8 +42,12 @@ export function DateBlock({ ev }: { ev: CirvolaEvent }) {
 export function EventCard({ ev, compact = false }: { ev: CirvolaEvent; compact?: boolean }) {
   return (
     <article className={`event-card${compact ? ' event-card-compact' : ''}`} id={compact ? undefined : ev.id}>
-      <div className={`event-media${ev.poster ? ' is-poster' : ''}`}>
-        <img src={ev.image} alt={ev.imageAlt || ''} loading="lazy" decoding="async" />
+      <div className={`event-media${ev.poster ? ' is-poster' : ''}${ev.video && !compact ? ' is-video' : ''}`}>
+        {ev.video && !compact ? (
+          <AutoplayVideo id={ev.video} title={ev.videoTitle || ev.title} poster={ev.image} />
+        ) : (
+          <img src={ev.image} alt={ev.imageAlt || ''} loading="lazy" decoding="async" />
+        )}
         <DateBlock ev={ev} />
       </div>
       <div className="event-body">

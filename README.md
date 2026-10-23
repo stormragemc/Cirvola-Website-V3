@@ -78,7 +78,6 @@ Also confirm:
 - Plans stay plans: proposed dates say "to be confirmed", pilots say "proposed".
 - No health, medical or disinfecting claims for eco-enzyme.
 - Never suggest valorising plate leftovers for food.
-- The eco-tour partner restaurant is not named.
 - Budget / use-of-funds slides are not published.
 
 ## Packages

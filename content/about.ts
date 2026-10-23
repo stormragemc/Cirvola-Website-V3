@@ -60,10 +60,10 @@ export const timeline = [
     label: 'First eco-tour',
     when: 'Jul 2025',
     title: 'Waste-to-Wonder: our first workshop',
-    image: '/images/photos/ecotour-garden-group.webp',
-    alt: 'A tour group walking through a lush garden',
+    image: '/images/photos/ecotour-kitchen-demo.webp',
+    alt: 'A chef demonstrating in an open kitchen while participants work at the counter',
     body: [
-      'Our very first workshop was an eco-tour in Dempsey: a sustainability tour, chef-led food demonstrations and tastings, an eco-garden walk, and hands-on eco-enzyme making from fruit waste. Eco-enzyme became our first recipe.',
+      'Our very first workshop was an eco-tour in Dempsey with AIR CCCC: a sustainability tour, chef-led food demonstrations and tastings, an eco-garden walk, and hands-on eco-enzyme making from fruit waste. Eco-enzyme became our first recipe.',
     ],
   },
   {

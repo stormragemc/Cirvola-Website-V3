@@ -72,8 +72,8 @@ export const timeline = [
     label: '100% BETTR summit',
     when: 'Oct 2025',
     title: 'Our first public showcase',
-    image: '/images/photos/eco-enzyme-bottles.webp',
-    alt: 'Small bottles of amber and brown eco-enzyme lined up on a counter',
+    image: '/images/photos/bettr-unfiltered-summit.webp',
+    alt: 'Visitors browsing exhibitor tables inside the BETTR space at The Unfiltered Summit',
     body: [
       'At The Unfiltered Summit at The Foundry, visitors sampled our upcycled orange marmalade bars and eco-enzymes made from fruit waste. We met sustainability-focused organisations including Resavour, Kita and Stick ’Em.',
     ],

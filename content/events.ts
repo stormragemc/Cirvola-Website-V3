@@ -122,8 +122,8 @@ export const events = [
       'Visitors sampled our food, learned about circular consumption and explored practical ways to cut food waste. We connected with sustainability-focused organisations including Resavour, Kita and Stick ’Em, as well as international visitors.',
     ],
     highlights: ['Orange marmalade bars', 'Eco-enzymes', 'Create4Good finalist'],
-    image: '/images/photos/eco-enzyme-bottles.webp',
-    imageAlt: 'Small bottles of amber and brown eco-enzyme lined up on a counter',
+    image: '/images/photos/bettr-unfiltered-summit.webp',
+    imageAlt: 'Visitors browsing exhibitor tables inside the BETTR space at The Unfiltered Summit',
   },
   {
     id: 'clean-green-singapore-2025',

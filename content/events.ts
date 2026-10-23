@@ -68,9 +68,8 @@ export const events = [
       'This is where beetroot came in. We started making beetroot latte and beetroot-pulp chocolate here, and we’ve kept developing them since, with mixes like orange zest. The series also began our partnership with Our Tampines Hub, along with an S$1,000 grant from Our Tampines Hub and North East CDC.',
     ],
     highlights: ['Every Sunday', 'Beetroot latte and chocolate', 'Eco-enzyme from fruit peels', 'S$1,000 grant'],
-    image: '/images/photos/poster-waste-to-wonders-aug.webp',
-    imageAlt: 'Poster for the Waste to Wonders culinary workshop at Our Tampines Hub in August 2026',
-    poster: true,
+    image: '/images/photos/oth-series-families.webp',
+    imageAlt: 'A Cirvola facilitator talking families through a recipe at the Our Tampines Hub cooking stations',
   },
   {
     id: 'vjc-design-thinking-oct-2026',

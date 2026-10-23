@@ -133,8 +133,8 @@ export const timeline = [
     label: 'Workshop series',
     when: 'Aug 2026',
     title: 'A home in the East',
-    image: '/images/photos/workshop-families.webp',
-    alt: 'Families at a cooking workshop',
+    image: '/images/photos/oth-series-beetroot-latte.webp',
+    alt: 'Four pans of bright pink beetroot latte being stirred',
     body: [
       'Our first full workshop series ran every Sunday at Our Tampines Hub, supported by North East CDC and Our Tampines Hub with an S$1,000 grant. Children, families and seniors made eco-enzyme and explored calamansi by-products.',
       'This is also where beetroot came in: beetroot latte and beetroot-pulp chocolate, which we’ve kept developing since, with mixes like orange zest.',

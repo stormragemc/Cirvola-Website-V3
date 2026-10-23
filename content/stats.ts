@@ -42,12 +42,12 @@ export const ourNumbers = [
   { value: '100+', label: 'participants engaged in our workshops' },
   { value: '~200', label: 'Victoria Junior College students in one school programme' },
   { value: '35', label: 'interviews and workshop taste tests' },
-  { value: '4.9/5', label: 'for instruction clarity, rated by participants on 16 August' },
+  { value: '4.9/5', label: 'for instruction clarity, rated by participants in August 2026' },
 ];
 
 export const ratings = {
   title: 'Workshop ratings out of 5',
-  sessions: ['16 August 2026', '6 September 2026'],
+  sessions: ['August 2026', 'September 2026'],
   rows: [
     { label: 'Overall experience', values: [4.4, 4.3] },
     { label: 'Instruction clarity', values: [4.9, 4.4] },

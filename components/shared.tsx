@@ -5,36 +5,35 @@ import type { events } from '@/content/events';
 export type CirvolaEvent = (typeof events)[number];
 
 export const kindLabel: Record<string, string> = {
-  workshop: 'Workshop',
-  cooking: 'Cooking session',
+  'eco-tour': 'Eco-tour',
+  pilot: 'Pilot workshop',
+  community: 'Community workshops',
   school: 'School programme',
+  corporate: 'Corporate workshop',
+  exhibition: 'Exhibition',
   booth: 'Booth',
-  appearance: 'Appearance',
+  fund: 'Innovation fund',
+  competition: 'Competition',
+  grant: 'Grant',
 };
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
+/** The badge on the event photo: month over year, or TBC when there's no date yet. */
 export function DateBlock({ ev }: { ev: CirvolaEvent }) {
-  const label = String(ev.dateLabel || '');
-  const precise = ev.date && !label.includes('[[') && /\b\d{1,2} [A-Z][a-z]{2}/.test(label) && !/ or /.test(label);
-  if (!precise) {
-    const year = !label.includes('[[') && /^\d{4}$/.test(label.trim()) ? label.trim() : null;
-    return year ? (
-      <span className="date-block date-block-tbc">
-        <span>{year}</span>
-      </span>
-    ) : (
+  const m = /^(\d{4})-(\d{2})/.exec(ev.date || '');
+  if (!m) {
+    return (
       <span className="date-block date-block-tbc">
         <Icon name="calendar" size={18} />
         <span>TBC</span>
       </span>
     );
   }
-  const d = new Date(ev.date + 'T00:00:00');
   return (
     <span className="date-block">
-      <span className="date-day">{d.getDate()}</span>
-      <span className="date-month">{`${months[d.getMonth()]} ${d.getFullYear()}`}</span>
+      <span className="date-day">{months[Number(m[2]) - 1]}</span>
+      <span className="date-month">{m[1]}</span>
     </span>
   );
 }
@@ -64,16 +63,19 @@ export function EventCard({ ev, compact = false }: { ev: CirvolaEvent; compact?:
             <Icon name="calendar" size={16} />
             <Txt text={ev.dateLabel} />
           </span>
-          <span>
-            <Icon name="pin" size={16} />
-            <Txt text={ev.venue} />
-          </span>
+          {ev.venue && (
+            <span>
+              <Icon name="pin" size={16} />
+              <Txt text={ev.venue} />
+            </span>
+          )}
         </p>
-        {!compact && (
-          <p className="event-summary">
-            <Txt text={ev.summary} />
-          </p>
-        )}
+        {!compact &&
+          ev.summary.map((para, i) => (
+            <p className="event-summary" key={i}>
+              <Txt text={para} />
+            </p>
+          ))}
         {!compact && ev.highlights && (
           <ul className="tag-list">
             {ev.highlights.map((h) => (

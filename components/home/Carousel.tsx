@@ -80,8 +80,8 @@ export function Happening({ upcoming }: { upcoming: CirvolaEvent[] }) {
         </ul>
       </div>
       <div className="wrap">
-        <Link className="text-link" href="/events#upcoming">
-          See all upcoming sessions <Icon name="arrow-right" size={18} />
+        <Link className="text-link" href="/events">
+          See all events and programmes <Icon name="arrow-right" size={18} />
         </Link>
       </div>
     </section>

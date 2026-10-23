@@ -5,7 +5,7 @@ Waste to wonder. The public website for Cirvola, built with [Next.js](https://ne
 | Page | What's on it |
 | --- | --- |
 | `/` Home | Hero, *What's happening* carousel (auto-fed from upcoming events), problem statistics with sources, the problem, the circular loop + before/after sliders, testimonials + real workshop ratings, programmes and impact, partner logos |
-| `/events` | Request a programme / See upcoming sessions, then Upcoming, Events, Booths, Appearances, Impact and achievements (fast fade-in on scroll) |
+| `/events` | Request a programme / See upcoming sessions, then Workshops, Booths and public exhibitions, Funding, pitch programmes and competitions, and Impact and achievements (fast fade-in on scroll) |
 | `/recipes` | **Idea Studio**: a visitor's valorisation idea → AI concept image, process diagram, animated storyboard (downloadable as video) and brief, emailed to Cirvola. Then **The Cirvola Cookbook** |
 | `/lab` | **R&D Lab**: the Valorisation Bench game (28 discoveries + AI inventions), open briefs, lab notebook, Valorise It! game, valorisers network sign-up |
 | `/about` | Horizontal clickable timeline (chapters + milestone posts), team, mentors |
@@ -64,7 +64,8 @@ Also confirm:
 - **Partner logos and naming:** add official logo files for **Singapore Airlines** and **Resource Impactz** in `public/images/logos/` and set `logo:` in `content/home.ts`. Check every partner is happy to be shown, and that the SIA Charity Run booth can be named publicly before 14 Nov.
 - **Testimonials:** three placeholders in `content/home.ts`. Use real quotes with permission, or delete the cards.
 - **Team:** roles follow the latest (BSF) deck plus Gabriel. Lukas Ho and Jennifer Clarissa Ferianto appear in the older Hult deck; add them back in `content/about.ts` if they're still on the team. Confirm the portrait for Nicholas Wang.
-- **Dates and venues:** VJC workshop date, BSF pitch month, Hult Prize cycle, exhibitions.
+- **Dates and venues:** events show month and year only (`date: 'YYYY-MM'` in `content/events.ts`). Still to confirm: the Resource Impactz workshop date and venue, the exact Clean & Green Singapore 2025 date, the Baby Shark Fund award month (listed as Sep 2026) and the Hult Prize round.
+- **VJC numbers:** the home page (`ourNumbers` in `content/stats.ts`) and the Events impact section (`schoolImpact`) say about 200 VJC students took part. Confirm attendance before launch.
 - **Recipes:** quantities for the calamansi bars, chocolate, candied peel and corn recipes.
 - **About timeline:** "How we met" story, plus Srihari's restaurant detail.
 - **Valorise It! URL:** `site.gameUrl` in `content/site.ts` still points to the temporary chatgpt.site host.

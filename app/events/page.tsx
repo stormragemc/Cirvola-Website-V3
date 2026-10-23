@@ -16,17 +16,14 @@ export const metadata = pageMetadata({
     'Cirvola workshops, cooking sessions, school programmes, booths and appearances. Request a food valorisation programme for your school, community or company.',
 });
 
-const byDateDesc = (a: CirvolaEvent, b: CirvolaEvent) => (b.date || '0000').localeCompare(a.date || '0000');
-const upcoming = events.filter((e) => e.status === 'upcoming').sort((a, b) => (a.date || '9999').localeCompare(b.date || '9999'));
-const pastEvents = events.filter((e) => e.status === 'past' && ['workshop', 'cooking', 'school'].includes(e.kind)).sort(byDateDesc);
-const booths = events.filter((e) => e.status === 'past' && e.kind === 'booth').sort(byDateDesc);
-const appearances = events.filter((e) => e.status === 'past' && e.kind === 'appearance').sort(byDateDesc);
+// Each group keeps the order of content/events.ts: oldest first, upcoming last.
+const inCategory = (category: string) => events.filter((e) => e.category === category);
+const upcoming = events.filter((e) => e.status === 'upcoming');
 
 const sections = [
-  { id: 'upcoming', label: 'Upcoming' },
-  { id: 'events', label: 'Events' },
+  { id: 'workshops', label: 'Workshops' },
   { id: 'booths', label: 'Booths' },
-  { id: 'appearances', label: 'Appearances' },
+  { id: 'funding', label: 'Funding' },
   { id: 'impact', label: 'Impact' },
 ];
 
@@ -71,8 +68,8 @@ export default function EventsPage() {
             </div>
             <div className="split-panel split-upcoming">
               <h2>See upcoming sessions</h2>
-              <p>{`${upcoming.length} sessions coming up, from a charity-run booth to school kitchen rotations.`}</p>
-              <a className="btn btn-secondary btn-lg" href="#upcoming">
+              <p>{`${upcoming.length} sessions coming up, from an eco-enzyme team workshop to a charity-run booth.`}</p>
+              <a className="btn btn-secondary btn-lg" href={`#${upcoming[0].id}`}>
                 Browse sessions <Icon name="arrow-right" size={18} />
               </a>
             </div>
@@ -92,10 +89,24 @@ export default function EventsPage() {
         </div>
       </nav>
 
-      <ListSection id="upcoming" title="Upcoming sessions" intro="Dates marked “to be confirmed” are still being finalised with our partners." items={upcoming} />
-      <ListSection id="events" title="Events" intro="Workshops, cooking sessions and school programmes we’ve run." items={pastEvents} />
-      <ListSection id="booths" title="Booths" intro="Where we’ve set up shop to show the public what waste can become." items={booths} />
-      <ListSection id="appearances" title="Appearances" intro="Pitches, competitions and stages we’ve stood on." items={appearances} />
+      <ListSection
+        id="workshops"
+        title="Workshops"
+        intro="Hands-on sessions for communities, schools and companies, from our first eco-tour onwards. Dates marked “to be confirmed” are still being finalised with our partners."
+        items={inCategory('workshops')}
+      />
+      <ListSection
+        id="booths"
+        title="Booths and public exhibitions"
+        intro="Where we’ve set up shop to show the public what waste can become."
+        items={inCategory('booths')}
+      />
+      <ListSection
+        id="funding"
+        title="Funding, pitch programmes and competitions"
+        intro="The funds and competitions that have backed Cirvola along the way."
+        items={inCategory('funding')}
+      />
 
       <section className="section impact" id="impact" aria-labelledby="impact-title">
         <div className="wrap">

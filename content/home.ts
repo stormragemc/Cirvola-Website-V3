@@ -94,7 +94,7 @@ export const partners = [
   { name: 'Victoria Junior College', logo: '/images/logos/victoria-junior-college.png' },
   // Add the official logo files to public/images/logos and set `logo` to the path.
   { name: 'Singapore Airlines', logo: null },
-  { name: 'Resource Impactz', logo: null },
+  { name: 'Resource Impactz', logo: '/images/logos/resource-impactz.png' },
 ];
 
 // PLACEHOLDER testimonials. Replace with real quotes you have permission to publish

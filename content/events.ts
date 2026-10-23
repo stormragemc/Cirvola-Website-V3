@@ -102,8 +102,9 @@ export const events = [
       'Cirvola would run the workshop, with Resource Impactz coordinating the event logistics.',
     ],
     highlights: ['About 50 participants', '90 minutes', 'Take-home eco-enzyme'],
-    image: '/images/photos/eco-enzyme-jars-garden.webp',
-    imageAlt: 'Large jars of fermenting fruit peels for eco-enzyme',
+    image: '/images/logos/resource-impactz.png',
+    imageAlt: 'Resource Impactz logo',
+    poster: true,
   },
 
   // ── 2. Booths and public exhibitions ────────────────────────
@@ -148,15 +149,16 @@ export const events = [
     status: 'past',
     date: '2026-10',
     dateLabel: 'Oct 2026',
-    title: 'Kopikao at Our Tampines Hub',
-    venue: 'Our Tampines Hub',
+    title: 'KoPiKao: Under One Sky at Tampines Central',
+    venue: 'Tampines Central Community Complex',
     summary: [
-      'A booth introducing valorisation to everyone passing through Our Tampines Hub, designed especially for the children with special needs visiting us.',
+      'A booth introducing valorisation to everyone passing by at KoPiKao, Tampines Central’s community gathering, designed especially for the children with special needs visiting us.',
       'Visitors played Valorise It!, our fruit-ninja-style game, to discover what food waste can turn into.',
     ],
     highlights: ['Valorise It! game', 'Learning through play'],
-    image: '/images/photos/workshop-families.webp',
-    imageAlt: 'Families working together at kitchen stations',
+    image: '/images/photos/poster-kopikao-oct-2026.webp',
+    imageAlt: 'Poster for KoPiKao Under One Sky at Tampines Central Community Complex on 24 October 2026',
+    poster: true,
   },
   {
     id: 'sia-charity-run-booth',
@@ -172,8 +174,8 @@ export const events = [
       'With around 700 to 800 staff expected, the idea is a quick, memorable game where people match food waste with the second-life products it could become.',
     ],
     highlights: ['No-cooking booth', 'Waste-matching game'],
-    image: '/images/photos/booth-team.webp',
-    imageAlt: 'The Cirvola team at an exhibition booth holding up upcycled products',
+    image: '/images/photos/sia-charity-run.webp',
+    imageAlt: 'Runners in Singapore Airlines Charity Run vests carrying a paper aeroplane along the course',
   },
 
   // ── 3. Funding, pitch programmes and competitions ───────────

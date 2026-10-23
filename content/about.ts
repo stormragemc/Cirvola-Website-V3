@@ -167,13 +167,13 @@ export const timeline = [
   {
     id: 'kopikao',
     kind: 'milestone',
-    label: 'Kopikao',
+    label: 'KoPiKao',
     when: 'Oct 2026',
     title: 'Valorisation through play',
-    image: '/images/photos/booth-team.webp',
-    alt: 'The Cirvola team together at a booth',
+    image: '/images/photos/poster-kopikao-oct-2026.webp',
+    alt: 'Poster for KoPiKao Under One Sky at Tampines Central Community Complex',
     body: [
-      'At the Kopikao event at Our Tampines Hub, we ran a booth designed especially for children with special needs, who played Valorise It!, our fruit-ninja-style game, to discover what food waste can turn into.',
+      'At KoPiKao, Tampines Central’s community gathering, we ran a booth designed especially for children with special needs, who played Valorise It!, our fruit-ninja-style game, to discover what food waste can turn into.',
     ],
   },
   {
